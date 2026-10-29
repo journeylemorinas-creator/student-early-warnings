@@ -244,9 +244,9 @@ python -m unittest discover -s tests -v
 
 ## 16. Developer / Contributors
 
-**Angelo Dale N. Zamora**  
+**Journey A. Lemorinas**  
 Bachelor of Science in Information Technology, Datamex College of Saint Adeline  
-Specialization: Full-Stack Developer  
+Specialization: Cybersecurity
 GitHub: _add link_ · LinkedIn: _add link_ · Email: _add email_
 
 Built as Project 1 of the BSIT Industry-Ready Portfolio. The demo students are fictional.
