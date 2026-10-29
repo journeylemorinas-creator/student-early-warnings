@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Error {{ code }}{% endblock %}
+{% block content %}
+<div class="text-center py-5">
+  <div class="display-1 fw-bold text-warning">{{ code }}</div>
+  <p class="lead">{{ message }}</p>
+  <a class="btn ew-btn" href="{{ url_for('index') }}"><i class="bi bi-house me-1"></i>Back to the dashboard</a>
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+:root {
+  --navy: #0f1a4d;
+  --gold: #f0b90b;
+  --red: #b4232c;
+  --green: #1f7a4d;
+  --amber: #b7791f;
+}
+body { background: #f5f6fb; color: #10173a; }
+.ew-nav { background: var(--navy); border-bottom: 3px solid var(--gold); }
+.ew-card { border: 1px solid #d6daec; border-radius: 14px; }
+.ew-btn { background: var(--gold); border-color: var(--gold); color: var(--navy); font-weight: 600; }
+.ew-btn:hover, .ew-btn:focus { background: #ffcb2f; border-color: #ffcb2f; color: var(--navy); }
+a { color: #1a2a6c; }
+
+.stat .stat-label { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: #566086; }
+.stat .stat-num { font-size: 2rem; font-weight: 700; line-height: 1.1; }
+.stat-high { border-left: 5px solid var(--red); }
+.stat-mod  { border-left: 5px solid var(--gold); }
+.stat-low  { border-left: 5px solid var(--green); }
+
+.ew-table thead th { font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: #566086; border-bottom-width: 2px; }
+.ew-table tbody tr:hover { background: #f1f3fb; }
+
+.risk-badge { display: inline-block; padding: .25rem .65rem; border-radius: 999px; font-size: .8rem; font-weight: 600; white-space: nowrap; }
+.risk-High     { background: #fde8ea; color: var(--red); }
+.risk-Moderate { background: #fff3cd; color: #7a5a00; }
+.risk-Low      { background: #dff3e8; color: var(--green); }
+.risk-No-data  { background: #e9ecf5; color: #566086; }
+
+.bar-High { background: var(--red); }
+.bar-Moderate { background: var(--gold); }
+.bar-Low { background: var(--green); }
+.bar-No-data { background: #9aa3c7; }
+
+.student-link { font-weight: 600; text-decoration: none; }
+.student-link:hover { text-decoration: underline; }
+.toast.text-bg-success { background: var(--green) !important; }
+.toast.text-bg-danger { background: var(--red) !important; }
+
+@media (max-width: 576px) { .stat .stat-num { font-size: 1.6rem; } }

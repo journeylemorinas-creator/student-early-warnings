@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Log in{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+    <div class="card ew-card shadow-sm mt-4">
+      <div class="card-body p-4">
+        <h1 class="h4 mb-1">Welcome back</h1>
+        <p class="text-secondary small">Log in to monitor student performance.</p>
+        <form method="post" novalidate>
+          <input type="hidden" name="_csrf" value="{{ csrf_token() }}">
+          <div class="mb-3">
+            <label class="form-label" for="username">Username</label>
+            <input class="form-control" id="username" name="username" autocomplete="username" required autofocus>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-control" id="password" name="password" type="password" autocomplete="current-password" required>
+          </div>
+          <button class="btn ew-btn w-100" type="submit">Log in</button>
+        </form>
+        <p class="text-center small mt-3 mb-0">No account? <a href="{{ url_for('register') }}">Create one</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
